@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Nagendra Prasath M</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition-medium);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-type {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            font-size: 0.8rem;
+            padding: 0.3rem 0.8rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            color: var(--text-secondary);
+        }
+
+        .ai-badge {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+
+            <div class="projects-grid">
+                <!-- Client Analytics -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-type">Web Application</span>
+                        <h3 class="project-title">Client Analytics</h3>
+                        <p class="project-desc">
+                            An analytical application designed for employers to monitor employee pension performance and
+                            metrics through intuitive charts.
+                            Leverages vast datasets to provide actionable insights.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Fusion Charts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Dash -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-type">Mobile Application</span>
+                        <h3 class="project-title">Customer Dash</h3>
+                        <p class="project-desc">
+                            A mobile app for employees to manage pension activities. Enables viewing scheme details,
+                            tracking balances, paying contributions, and withdrawing funds.
+                            Adopted by 15K+ users.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trackandtrail.in -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-type">E-commerce</span>
+                        <h3 class="project-title">Trackandtrail.in</h3>
+                        <p class="project-desc">
+                            An e-commerce website for bicycle buyers. Collaborated with cross-functional teams to launch
+                            within 6 months.
+                            Integrated glass box application for user activity monitoring.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">E-commerce</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">Jira</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Project -->
+                <div class="project-card" style="border-color: rgba(139, 92, 246, 0.5);">
+                    <div class="project-content">
+                        <div><span class="ai-badge"><i class="fas fa-robot"></i> AI Innovation</span></div>
+                        <h3 class="project-title">LLM-Driven Analytics</h3>
+                        <p class="project-desc">
+                            Implemented a local analytics workflow using Ollama (gpt-oss-20b) to generate
+                            organization-specific insights from large-scale datasets (100GB).
+                            Automated performance evaluation and variance analysis.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">Ollama</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">RAG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

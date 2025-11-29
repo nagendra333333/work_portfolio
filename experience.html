@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Nagendra Prasath M</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin-top: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            height: 100%;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 4rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 11px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 4px solid var(--bg-primary);
+            box-shadow: 0 0 0 2px var(--accent-color);
+        }
+
+        .timeline-content {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .company-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .role-title {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 0.2rem;
+        }
+
+        .duration {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+        }
+
+        .responsibilities {
+            list-style: none;
+        }
+
+        .responsibilities li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .responsibilities li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 10px;
+            }
+
+            .timeline-item {
+                padding-left: 30px;
+            }
+
+            .timeline-dot {
+                left: 1px;
+            }
+
+            .timeline-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <h2>Work Experience</h2>
+
+            <div class="timeline">
+                <!-- TCS -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <div class="company-name">Tata Consultancy Services</div>
+                                <div class="role-title">Senior Business Analyst</div>
+                                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">
+                                    Chennai, India</div>
+                            </div>
+                            <span class="duration">May 2022 – Present</span>
+                        </div>
+
+                        <h4 style="margin-bottom: 1rem;">Key Responsibilities</h4>
+                        <ul class="responsibilities">
+                            <li>Led requirement elicitation and prioritization with stakeholders for major
+                                banking/insurance projects.</li>
+                            <li>Documented BRD/FRD including User Stories, Use Cases, and Acceptance Criteria.</li>
+                            <li>Facilitated Scrum ceremonies: Sprint Planning, Daily Stand-up, Reviews, and
+                                Retrospectives.</li>
+                            <li>Managed change and release management initiatives, ensuring smooth adoption of new
+                                processes.</li>
+                            <li>Supported application and data migration mapping into AWS.</li>
+                            <li>Created Python/Shell scripts and SQL queries for data load and backend integration.</li>
+                            <li><strong>AI Adoption:</strong> Implemented local analytics workflow using LLMs (Ollama)
+                                to generate insights from large datasets.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tube Investments -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <div class="company-name">Tube Investments of India</div>
+                                <div class="role-title">Business Analyst</div>
+                                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">
+                                    Chennai, India</div>
+                            </div>
+                            <span class="duration">Nov 2020 – Apr 2022</span>
+                        </div>
+
+                        <h4 style="margin-bottom: 1rem;">Key Responsibilities</h4>
+                        <ul class="responsibilities">
+                            <li>Collaborated with cross-functional teams (Marketing, Finance, Supply Chain) for
+                                Trackandtrail.in.</li>
+                            <li>Documented requirements via Jira and coordinated with UI/UX teams for prototyping.</li>
+                            <li>Facilitated Scrum ceremonies and managed backlog prioritization.</li>
+                            <li>Integrated glass box application to monitor user activity and improve UX.</li>
+                            <li>Developed a 2-year Roadmap Planning and presented it to stakeholders.</li>
+                            <li>Ensured appropriate testing (SIT, UAT, Performance Testing).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <h2>Achievements</h2>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                    <div class="card">
+                        <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;"><i class="fas fa-trophy"></i>
+                            Star of the Quarter</h4>
+                        <p>Awarded for 4 consecutive quarters for outstanding performance.</p>
+                    </div>
+                    <div class="card">
+                        <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;"><i class="fas fa-chart-line"></i>
+                            Efficiency Boost</h4>
+                        <p>Reduced requirement clarification cycle time by 32% through streamlined practices.</p>
+                    </div>
+                    <div class="card">
+                        <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;"><i class="fas fa-bug"></i> Zero
+                            Bugs</h4>
+                        <p>Made 10+ successful releases in 2024 with "zero bugs" via automation.</p>
+                    </div>
+                    <div class="card">
+                        <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;"><i class="fas fa-star"></i>
+                            Outstanding Performance</h4>
+                        <p>Received Outstanding Performance Award for the year 2024.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
